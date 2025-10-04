@@ -1,0 +1,25 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "moduleResolution": "bundler",
+    "emitDecoratorMetadata": false,
+    "target": "es2022",
+    "module": "preserve",
+    "lib": ["es2020", "dom"],
+    "baseUrl": ".",
+    "paths": {
+      "@project-magdyo/data-access": ["libs/shared/data-access/src/index.ts"],
+      "@project-magdyo/feature-auth": ["libs/feature-auth/src/index.ts"],
+      "@project-magdyo/feature-carts": ["libs/feature-carts/src/index.ts"],
+      "@project-magdyo/feature-products": [
+        "libs/feature-products/src/index.ts"
+      ],
+      "@project-magdyo/feature-users": ["libs/feature-users/src/index.ts"],
+      "@project-magdyo/state": ["libs/shared/state/src/index.ts"],
+      "@project-magdyo/ui": ["libs/ui/src/index.ts"],
+      "@project-magdyo/utils": ["libs/shared/utils/src/index.ts"]
+    },
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules", "tmp"]
+}
