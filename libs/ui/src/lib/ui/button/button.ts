@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'lib-button',
@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './button.scss'
 })
 export class Button {
-
+  @Input() type: 'primary' | 'secondary' = 'primary';
+  @Input() disabled = false;
 }

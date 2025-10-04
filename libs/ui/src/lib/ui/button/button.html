@@ -1,1 +1,9 @@
-<p>button works!</p>
+
+<button 
+  class="ui-button"
+  [class.primary]="type === 'primary'"
+  [class.secondary]="type === 'secondary'"
+  [disabled]="disabled"
+>
+  <ng-content></ng-content>
+</button>

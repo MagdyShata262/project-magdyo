@@ -1,0 +1,31 @@
+.product-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  border: 1px solid #e1e5e9;
+  text-align: center;
+  
+  .product-image {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .product-title {
+    margin: 0 0 0.5rem 0;
+    color: #2c3e50;
+    font-size: 1.3rem;
+  }
+  
+  .product-description {
+    margin: 0 0 1rem 0;
+    color: #7f8c8d;
+    line-height: 1.5;
+  }
+  
+  .product-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #27ae60;
+  }
+}
