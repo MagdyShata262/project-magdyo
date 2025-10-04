@@ -15,7 +15,8 @@
       ],
       "@project-magdyo/feature-users": ["./libs/feature-users/src/index.ts"],
       "@project-magdyo/state": ["./libs/shared/state/src/index.ts"],
-      "@project-magdyo/utils": ["./libs/shared/utils/src/index.ts"]
+      "@project-magdyo/utils": ["./libs/shared/utils/src/index.ts"],
+      "@project-magdyo/ui": ["./libs/ui/src/index.ts"]
     },
     "skipLibCheck": true
   },
