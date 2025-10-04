@@ -1,2 +1,41 @@
-<app-nx-welcome></app-nx-welcome>
-<router-outlet></router-outlet>
+<lib-header>
+  <div class="header-content">
+    <h1>🛍️ متجر مجدي</h1>
+    <p>اكتشف أفضل المنتجات بأفضل الأسعار</p>
+  </div>
+</lib-header>
+
+<main class="main-content">
+  <!-- بطاقة ترحيبية -->
+  <lib-card>
+    <h2>🎉 أهلاً بك في متجرنا!</h2>
+    <p>نقدم لك أفضل المنتجات بجودة عالية وسعر مميز</p>
+    <lib-button type="primary">تصفح المنتجات</lib-button>
+  </lib-card>
+
+  <!-- بطاقة منتج -->
+  <lib-product-card
+    title="ساعة ذكية"
+    description="ساعة ذكية بتقنيات متطورة تتبع الصحة واللياقة"
+    price="899 ر.س"
+  >
+  </lib-product-card>
+
+  <!-- حقل بحث -->
+  <lib-input placeholder="🔍 ابحث عن المنتجات..." class="search-input">
+  </lib-input>
+
+  <!-- مجموعة أزرار -->
+  <div class="buttons-group">
+    <lib-button type="primary">إضافة إلى السلة</lib-button>
+    <lib-button type="secondary">المفضلة</lib-button>
+  </div>
+</main>
+
+<lib-footer>
+  <div class="footer-content">
+    <p>📞 للتواصل: 0551234567</p>
+    <p>© 2024 متجر مجدي - جميع الحقوق محفوظة</p>
+  </div>
+</lib-footer>
+
