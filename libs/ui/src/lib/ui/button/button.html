@@ -1,9 +1,8 @@
-
-<button 
+<button
   class="ui-button"
-  [class.primary]="type === 'primary'"
-  [class.secondary]="type === 'secondary'"
+  [class]="type + ' ' + size"
   [disabled]="disabled"
+  (click)="handleClick($event)"
 >
   <ng-content></ng-content>
 </button>

@@ -5,7 +5,7 @@ import { Theme } from './theme';
   selector: 'lib-theme-toggle',
   imports: [],
   templateUrl: './theme-toggle.html',
-  styleUrl: './theme-toggle.scss'
+  styleUrl: './theme-toggle.scss',
 })
 export class ThemeToggle {
   public themeService = inject(Theme);
@@ -13,5 +13,4 @@ export class ThemeToggle {
   toggleTheme(): void {
     this.themeService.toggleTheme();
   }
-
 }
