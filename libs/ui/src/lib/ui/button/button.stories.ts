@@ -79,6 +79,7 @@ export const Secondary: Story = {
 export const Danger: Story = {
   args: {
     type: 'danger',
+    size: 'medium',
   },
   render: (args) => ({
     props: args,

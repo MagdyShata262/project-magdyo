@@ -4,6 +4,8 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.25s ease-in-out;
+  display: inline-block;
+  text-align: center;
 
   &.small {
     padding: 6px 12px;
@@ -11,19 +13,18 @@
   }
 
   &.medium {
-    padding: 10px 20px;
+    padding: 10px 24px;  /* 👈 زودنا العرض هنا */
     font-size: 1rem;
   }
 
   &.large {
-    padding: 14px 28px;
+    padding: 14px 32px;  /* 👈 زودنا العرض والارتفاع هنا */
     font-size: 1.1rem;
   }
 
   &.primary {
     background: var(--primary-color, #007bff);
     color: #fff;
-
     &:hover:not(:disabled) {
       background: #0069d9;
       transform: translateY(-2px);
@@ -34,7 +35,6 @@
     background: #f5f5f5;
     color: #333;
     border: 1px solid #ccc;
-
     &:hover:not(:disabled) {
       background: #e0e0e0;
     }
@@ -46,6 +46,7 @@
 
     &:hover:not(:disabled) {
       background: #b02a37;
+      transform: translateY(-2px);
     }
   }
 
