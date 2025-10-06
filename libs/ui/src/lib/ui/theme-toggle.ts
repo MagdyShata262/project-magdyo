@@ -1,9 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { Theme } from './theme';
+import { Button } from './button/button';
+
 
 @Component({
   selector: 'lib-theme-toggle',
-  imports: [],
+  imports: [Button],
   templateUrl: './theme-toggle.html',
   styleUrl: './theme-toggle.scss',
 })

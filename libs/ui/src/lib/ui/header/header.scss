@@ -1,0 +1,45 @@
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--surface-color);
+    color: var(--text-primary);
+    padding: 12px 24px;
+    box-shadow: var(--shadow);
+    transition: background-color 0.3s, color 0.3s;
+
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: var(--primary-color);
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 20px;
+
+        a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
+    }
+
+    .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+}

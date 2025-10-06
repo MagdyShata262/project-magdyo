@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+/* global-styles.scss */
+:root[data-theme='light'] {
+  --primary-color: #667eea;
+  --primary-dark: #5a6fd8;
+  --secondary-color: #764ba2;
+  --background-color: #ffffff;
+  --surface-color: #f8f9fa;
+  --text-primary: #2c3e50;
+  --text-secondary: #7f8c8d;
+  --border-color: #e1e5e9;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --shadow-hover: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+:root[data-theme='dark'] {
+  --primary-color: #8a9bff;
+  --primary-dark: #7a8bef;
+  --secondary-color: #9d6bc9;
+  --background-color: #1a1a1a;
+  --surface-color: #2d2d2d;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b0;
+  --border-color: #404040;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --shadow-hover: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* تطبيق الألوان الأساسية على الجسم */
+body {
+  background-color: var(--background-color);
+  color: var(--text-primary);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}

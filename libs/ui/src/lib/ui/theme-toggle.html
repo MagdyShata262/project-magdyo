@@ -1,9 +1,9 @@
-
-<button class="theme-toggle" (click)="toggleTheme()" [attr.aria-label]="'Toggle theme'">
+<lib-button type="secondary" size="medium" (clicked)="toggleTheme()">
   <span class="theme-icon">
     {{ themeService.currentTheme() === 'light' ? '🌙' : '☀️' }}
   </span>
   <span class="theme-text">
-    {{ themeService.currentTheme() === 'light' ? 'الوضع الليلي' : 'الوضع النهاري' }}
+    {{ themeService.currentTheme() === 'light' ? 'الوضع الليلي' : 'الوضع
+    النهاري' }}
   </span>
-</button>
+</lib-button>

@@ -1,40 +1,34 @@
-<lib-header>
-  <div class="header-content">
-    <h1>🛍️ متجر مجدي</h1>
-    <p>اكتشف أفضل المنتجات بأفضل الأسعار</p>
-  </div>
-</lib-header>
+<lib-header></lib-header>
 
 <main class="main-content">
-  <!-- بطاقة ترحيبية -->
   <lib-card>
-    <h2>🎉 أهلاً بك في متجرنا!</h2>
-    <p>نقدم لك أفضل المنتجات بجودة عالية وسعر مميز</p>
-    <lib-button type="primary">تصفح المنتجات</lib-button>
+    <h2>مرحبًا بك في واجهتك</h2>
+    <p>
+      هذا المشروع يستخدم Angular + Nx مع مكتبة UI مخصصة تدعم الثيم الداكن
+      والفاتح 🌙☀️
+    </p>
   </lib-card>
 
-  <!-- بطاقة منتج -->
-  <lib-product-card
-    title="ساعة ذكية"
-    description="ساعة ذكية بتقنيات متطورة تتبع الصحة واللياقة"
-    price="899 ر.س"
-  >
-  </lib-product-card>
+  <lib-input placeholder="ابحث عن منتج..." class="search-input"></lib-input>
 
-  <!-- حقل بحث -->
-  <lib-input placeholder="🔍 ابحث عن المنتجات..." class="search-input">
-  </lib-input>
-
-  <!-- مجموعة أزرار -->
   <div class="buttons-group">
-    <lib-button type="primary">إضافة إلى السلة</lib-button>
-    <lib-button type="secondary">المفضلة</lib-button>
+    <lib-button type="primary">زر أساسي</lib-button>
+    <lib-button type="secondary">زر ثانوي</lib-button>
+    <lib-button type="danger">زر تحذير</lib-button>
   </div>
+
+  <section class="products-section">
+    <h3 style="text-align: center; color: var(--text-primary)">
+      منتجات مختارة
+    </h3>
+    <div
+      style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center"
+    >
+      <lib-product-card></lib-product-card>
+      <lib-product-card></lib-product-card>
+      <lib-product-card></lib-product-card>
+    </div>
+  </section>
 </main>
 
-<lib-footer>
-  <div class="footer-content">
-    <p>📞 للتواصل: 0551234567</p>
-    <p>© 2024 متجر مجدي - جميع الحقوق محفوظة</p>
-  </div>
-</lib-footer>
+<lib-footer></lib-footer>
