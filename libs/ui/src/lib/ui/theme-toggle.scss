@@ -1,13 +1,32 @@
 
-.theme-icon {
-  margin-right: 6px;
-  font-size: 1.1rem;
-  display: inline-block;
-  vertical-align: middle;
-}
 
-.theme-text {
-  display: inline-block;
-  vertical-align: middle;
-  font-weight: 500;
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: var(--surface-color);
+  color: var(--text-primary);
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  direction: rtl;
+
+  &:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    transform: translateY(-2px);
+  }
+
+  .theme-icon {
+    font-size: 1.2rem;
+  }
+
+  .theme-text {
+    white-space: nowrap;
+  }
 }
